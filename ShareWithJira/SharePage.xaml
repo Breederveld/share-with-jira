@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="ShareWithJira.SharePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ShareWithJira"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="600.427">
+
+    <StackPanel Margin="10">
+        <TextBox Name="tbJiraId" InputScope="Url" KeyDown="tbJiraId_KeyDown" PlaceholderText="Jira Id" />
+        <TextBox Name="tbComment" AcceptsReturn="True" PlaceholderText="Comment" />
+        <Button Name="btSendToJira">Send to Jira</Button>
+    </StackPanel>
+</Page>

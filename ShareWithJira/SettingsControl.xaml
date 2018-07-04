@@ -1,0 +1,20 @@
+﻿<UserControl
+    x:Class="ShareWithJira.SettingsControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ShareWithJira"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Name="settingsControl">
+
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock VerticalAlignment="Center">https://</TextBlock>
+            <TextBox Name="tbJiraPrefix" InputScope="Url" PlaceholderText="prefix" Height="10" Padding="0, 4" MinWidth="50" />
+            <TextBlock VerticalAlignment="Center">.atlassian.net/</TextBlock>
+        </StackPanel>
+        <TextBox Name="tbUser" PlaceholderText="user" />
+        <PasswordBox Name="tbPassword" PlaceholderText="password" />
+    </StackPanel>
+</UserControl>
